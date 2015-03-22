@@ -1,0 +1,15 @@
+/:
+  controller: Controllers\Home
+  action: login
+
+/login:
+  controller: Controllers\Home
+  action: login
+
+/register:
+  controller: Controllers\Home
+  action: Register
+
+/smarty:
+  contgroller: Controllers\Home
+  action:Smarty

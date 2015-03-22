@@ -1,0 +1,38 @@
+{% extends "baseTemplate.twig" %}
+{% block body %}
+<body>
+<div id="loginForm">
+    {% if post == true %}
+        {% if result == 1 %}
+            <div>Access granted.</div>
+        {% elseif result == 2 %}
+            <div>Access denied. <a href='login'>Back.</a></div>
+        {% endif %}
+    {% endif %}
+
+    {% if post == false %}
+        <form action="login" method="post">
+
+            <div id="formHeader">Website Login</div>
+
+            <div id="formBody">
+                <div class="formField">
+                    <input type="text" name="username" required placeholder="Username" />
+                </div>
+
+                <div class="formField">
+                    <input type="password" name="password" required placeholder="Password" />
+                </div>
+
+                <div>
+                    <input type="submit" value="Login" class="customButton" />
+                </div>
+            </div>
+            <div id='userNotes'>
+                    New here? <a href='register'>Register for free</a>
+            </div>
+        </form>
+    </div>
+    {% endif %}
+{% endblock %}
+

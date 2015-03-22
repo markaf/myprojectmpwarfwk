@@ -1,0 +1,18 @@
+{
+    "/": {
+        "controller": "\\Controllers\\Home",
+        "action": "login"
+    },
+    "/login": {
+        "controller": "\\Controllers\\Home",
+        "action": "login"
+    },
+    "/register": {
+        "controller": "\\Controllers\\Home",
+        "action": "Register"
+    },
+    "/smarty": {
+        "controller": "\\Controllers\\Home",
+        "action": "Smarty"
+    }
+}
